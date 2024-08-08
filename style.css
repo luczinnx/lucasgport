@@ -1,0 +1,389 @@
+@charset "UTF-8";
+
+* {
+    margin         : 0px;
+    padding        : 0px;
+    box-sizing     : border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family          : Arial, Helvetica, sans-serif;
+    height               : 100vh;
+    background-color     : black;
+    color                : white;
+}
+
+.cabeca {
+    background-image: linear-gradient(to bottom, #00ba16, #00a914);
+    padding         : 20px;
+    display         : flex;
+    justify-content : space-around;
+    width: 100%;
+    flex-wrap       : wrap;
+    box-shadow      : inset 0px 0px 10px #0000004c;
+}
+
+.cabeca_titulo {
+    color        : white;
+    font-size    : 50px;
+}
+
+.cabeca_nav {
+    display     : flex;
+    align-items : center;
+    gap         : 25px;
+}
+
+.cabeca_nav a {
+    text-decoration: none;
+    color          : white;
+    margin-left    : 10px;
+    text-align     : center;
+    font-weight    : bold;
+    transition     : 450ms;
+    padding        : 10px;
+    font-size: .9em;
+}
+
+.cabeca_nav a:hover {
+    background-color: #00850f;
+    border-radius   : 20px;
+}
+
+.cabeca_nav a::selection {
+    color: #3cffb8;
+}
+
+.principal {
+    display              : flex;
+    justify-content      : center;
+    background-attachment: fixed;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+    background-position  : center;
+    background-image     : url("Imagens/Frame\ 1.png");
+    border-bottom        : 10px solid #00ba16;
+}
+
+.principal_conteudo {
+    max-width       : 450px;
+    background-image: linear-gradient(to bottom, #00ba16, #00a914);
+    color           : white;
+    padding         : 17px;
+    display         : flex;
+    justify-content : start;
+    flex-direction  : column;
+    border-radius   : 20px 0px 20px 0px;
+}
+
+.principal_conteudo, .parte_foto {
+    margin: 10%;
+}
+
+.principal_conteudo, .principal_conteudo_bio_paragrafo {
+    border: 3px solid #00CC82;
+}
+
+.principal_conteudo h1 {
+    margin-top      : 30px;
+    font-size       : 40px;
+    font-weight     : bold;
+    background-color: #00850f;
+    box-shadow      : 2px 2px 20px rgba(0, 0, 0, 0.245);
+    width           : 184px;
+    padding         : 5px;
+    border-radius   : 20px;
+    margin          : auto;
+    margin-top      : 15px;
+    transition      : 380ms;
+}
+
+.principal_conteudo a {
+    color          : aliceblue;
+    text-decoration: none;
+    transition     : 250ms;
+}
+
+.principal_conteudo a:hover {
+    color: #3cffb8;
+}
+
+.principal2 {
+    color                : white;
+    display              : flex;
+    flex-direction       : row;
+    align-items          : center;
+    flex-wrap            : wrap;
+    flex-direction       : row-reverse;
+    justify-content      : space-evenly;
+    background-image     : url("Imagens/Frame\ 2.png");
+    background-size      : cover;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-attachment: fixed;
+    border-bottom        : 10px solid #00ba16;
+}
+
+.principal2_titulo {
+    font-size    : 2em;
+    margin-bottom: 30px;
+}
+
+.principal2_titulo strong {
+    animation: muda-cor 1.5s infinite alternate;
+}
+
+
+.principal2 .principal2_gamehubr {
+    background-image: linear-gradient(to bottom, #00ba16, #00a914);
+    padding         : 10px;
+    max-width       : 35em;
+    min-width       : 20em;
+    border-radius   : 0px 20px 20px 20px;
+}
+
+.principal2_paragrafo  {
+    max-width    : 25em;
+    font-size    : 1.2em;
+    margin-bottom: 30px;
+    text-align   : justify;
+}
+
+.principal2_conteudo, .principal2_gamehubr {
+    margin: 3.5%;
+}
+
+.principal3 {
+    display              : flex;
+    justify-content      : center;
+    background-attachment: fixed;
+    background-size      : cover;
+    background-repeat    : no-repeat;
+    background-position  : center;
+    background-image     : url("Imagens/noticia\ 1.png");
+}
+
+.principal3_conteudo {
+    margin: 2.3%;
+}
+
+.principal_conteudo_biop {
+    margin-top: 15px;
+    font-size : 1.1em;
+    text-align: justify;
+    padding   : 3px;
+}
+
+.principal3_conteudo_conjunto a {
+    color: #00a914;
+    transition: 1s;
+}
+
+.principal3_conteudo_conjunto a:hover {
+    color: #21db37;
+}
+
+.principal4_titulo {
+    background-color: #00850f;
+    padding-top   : 1.5%;
+    padding-bottom: 1.5%;
+    text-align    : center;
+}
+
+.principal4_blocos {
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    gap                : 40px;
+    background-image   : url("Imagens/computador.png");
+    background-position: center;
+    background-size    : cover;
+}
+
+.principal4_bloco {
+    background-color: #00a914;
+    opacity         : 50%;
+    padding         : 3%;
+    height          : 30em;
+    margin-bottom   : 10px;
+    margin-top      : 10px;
+    transition      : 450ms;
+}
+
+.principal4_bloco:hover {
+    opacity      : 100%;
+    border-radius: 50px;
+    box-shadow   : 0px 5px 30px #21db37bd;
+    animation    : aumentando 1.4s infinite alternate;
+}
+
+.principal4_bloco_imagens img {
+    height    : 7.5em;
+    margin    : auto;
+    transition: 450ms;
+}
+
+.principal4_bloco:hover .principal4_bloco_imagens img{
+    animation: go-back 1.2s normal;
+}
+
+.principal4_bloco_cont {
+    margin-top: 15px;
+}
+
+.principal4_bloco_cont p{
+    width     : 12em;
+    font-size : .9em;
+    text-align: left;
+    margin-top: 10px;;
+}
+
+
+.parte_foto p {
+    text-align      : center;
+    background-image: linear-gradient(to bottom, #00ba16, #00a914);
+    margin          : auto;
+    padding         : 7px;
+    width           : 75%;
+    border-radius   : 0px 20px 20px;
+}
+
+.minha_foto {
+    height: 15em;
+    background-image: linear-gradient(to bottom, #00ba16, #00a914);
+    padding         : 7px;
+    border-radius   : 20px 0px 20px 20px;
+}
+
+.footer {
+    background-image: linear-gradient(to bottom, #00ba16, #00a914);
+    color           : #fff;
+    padding         : 20px 0;
+    font-size       : 14px;
+    box-shadow      : inset 0px 0px 10px #0000008d;
+}
+
+.footer-top {
+    text-align   : center;
+    margin-bottom: 20px;
+}
+
+.footer-top .back-to-top {
+    color           : #fff;
+    text-decoration : none;
+    font-size       : 16px;
+    padding         : 10px 20px;
+    background-color: #00a914;
+    border-radius   : 4px;
+    transition      : background-color 0.3s;
+}
+
+.footer-top .back-to-top:hover {
+    background-color: #21db37;
+}
+
+.footer-links {
+    display        : flex;
+    justify-content: center;
+    flex-wrap      : wrap;
+    margin-top     : 27px;
+    gap            : 120px;
+}
+
+.footer-column {
+    width : 10em;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size    : 16px;
+    color        : #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding   : 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color          : #ccc;
+    text-decoration: none;
+    transition     : color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size : 12px;
+    color     : #ccc;
+}
+
+@media (max-width: 1200px){
+    .principal {
+        flex-direction: column-reverse;
+        padding       : 5%;
+    }
+
+    .parte_foto {
+        margin: auto;
+    }
+
+    .cabeca {
+        padding: 5%;
+        
+        justify-content: center;
+    }
+    
+    .cabeca_nav {
+        flex-wrap: wrap;
+    }
+
+    .principal4_blocos {
+        flex-wrap: wrap;
+    }
+
+
+    .footer-links {
+        gap: 0px;
+    }
+}
+
+@keyframes go-back {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes aumentando {
+    from {
+        transform: scale(1.02);
+    }
+
+    to {
+        transform: scale(1.04);
+    }
+}
+
+@keyframes muda-cor {
+    from {
+        color: white;
+    }
+
+    to {
+        color: rgb(182, 42, 182);
+    }
+}
